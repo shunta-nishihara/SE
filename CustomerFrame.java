@@ -17,7 +17,7 @@ public class CustomerFrame extends JFrame {
 
         JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("ホテル予約", createReservationPanel());
-        /* tabbedPane.addTab("予約確認・キャンセル", createConfirmationPanel()); */
+        tabbedPane.addTab("予約確認・キャンセル", createConfirmationPanel());
 
         add(tabbedPane);
         setLocation(100, 100);
@@ -122,7 +122,7 @@ public class CustomerFrame extends JFrame {
         return panel;
     }
 
-    /* private JPanel createConfirmationPanel() {
+    private JPanel createConfirmationPanel() {
         JPanel panel = new JPanel(new BorderLayout(5, 5));
         JPanel topPanel = new JPanel(new FlowLayout());
         JTextField reservationField = new JTextField(10);
@@ -179,5 +179,5 @@ public class CustomerFrame extends JFrame {
         });
         
         return panel;
-    } */
+    }
 }
